@@ -31,8 +31,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-latest_stable_libgphoto_version=2_5_23
-latest_stable_gphoto_version=2_5_23
+latest_stable_libgphoto_version=2_5_24
+latest_stable_gphoto_version=2_5_24
 display_version=$(echo "libgphoto ${latest_stable_libgphoto_version}; gphoto ${latest_stable_gphoto_version}" | tr '_' '.')
 branch_libgphoto=''
 branch_gphoto=''
@@ -154,7 +154,7 @@ echo "----------------------"
 echo
 
 if (/usr/bin/git clone $branch_libgphoto https://github.com/gphoto/libgphoto2.git)
-    then
+  then
         cd libgphoto2/
 	else
 		echo "Unable to get libgphoto2"
@@ -181,7 +181,7 @@ echo "Downloading gphoto2"
 echo "-------------------"
 echo
 
-if (/usr/bin/git clone  $branch_gphoto https://github.com/gphoto/gphoto2.git)
+if (/usr/bin/git clone $branch_gphoto https://github.com/gphoto/gphoto2.git)
   then
         cd gphoto2
 	else
